@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Табличная вёрстка</title>
+
+    <style>
+
+        #main_layout_table{
+            width: 100%;                        
+        }
+
+        #left_column{
+            width: 60%;
+        }
+
+        #left_column img
+        {
+            width: 100%;
+        }
+
+        #right_column{
+            width: 40%;            
+        }
+
+        #right_column table
+        {
+            width: 100%;            
+        }
+
+        #calendar td{
+            text-align: center;
+            vertical-align: middle;
+            width: 14%;            
+            font-family: Arial, Helvetica, sans-serif;                        
+        }
+
+        #right_column thead, tfoot
+        {
+            background-color: #dddddd;
+            font-size: 12px;            
+        }
+
+        td {
+            vertical-align: top;
+        }
+
+        .date
+        {
+            color: darkslateblue;
+            font-weight: bold;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .date-month
+        {
+            float: left;
+        }
+
+        .date-year
+        {
+            float: right;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- Main site layout -->
+
+    <table border="1" id="main_layout_table">
+        <tr>
+            <td id="left_column" rowspan="4">
+                <img src="images/banner.gif" />
+            </td>
+            <td id="right_column">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="date date-month">Липень / July</div>
+                            <div class="date date-year">2019</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- Calendar table -->                            
+                            <table id="calendar">
+                                <thead>
+                                    <tr>
+                                        <td>Пн</td>
+                                        <td>Вт</td>
+                                        <td>Ср</td>
+                                        <td>Чт</td>
+                                        <td>Пт</td>
+                                        <td>Сб</td>                            
+                                        <td>Вс</td>                            
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                        <td>7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>9</td>
+                                        <td>10</td>
+                                        <td>11</td>
+                                        <td>12</td>
+                                        <td>13</td>
+                                        <td>14</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>16</td>
+                                        <td>17</td>
+                                        <td>18</td>
+                                        <td>19</td>
+                                        <td>20</td>
+                                        <td>21</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22</td>
+                                        <td>23</td>
+                                        <td>24</td>
+                                        <td>25</td>
+                                        <td>26</td>
+                                        <td>27</td>
+                                        <td>28</td>
+                                    </tr>
+                                    <tr>
+                                        <td>29</td>
+                                        <td>30</td>
+                                        <td>31</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                    </tr>                                                                                                
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Mo</td>
+                                        <td>Tu</td>
+                                        <td>We</td>
+                                        <td>Th</td>
+                                        <td>Fr</td>
+                                        <td>Sa</td>                            
+                                        <td>Su</td>                            
+                                    </tr>
+                                </tfoot>                    
+                            </table>
+                            <!-- Calendar table -->                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Старт каталога
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="img-opt" style="float: right;">
+                                <img src="images/opt.png" />
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <!-- End Of Right Column -->
+        </tr>       
+    </table>
+
+</body>
+</html>

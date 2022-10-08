@@ -1,0 +1,38 @@
+button{
+    margin: 5px;
+    border-radius: 10px;
+    background-color: mistyrose;
+    font-size: 30px;
+}
+#circle{
+    border-radius: 50%;
+    padding: 30px;
+    margin-right: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+#square
+{
+    padding: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-right: 50px;
+}
+#trap{
+    border-bottom: 100px solid red;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0px;
+    width: 100px;
+    padding: 30px;
+}
+#container{
+    display: flex;
+}
+#_col, #_fig{
+    margin-top: 30px;
+    width: 100px;
+    height: 30px;
+}

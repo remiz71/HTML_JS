@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+  <link href="css/main.css"/>
+    <title>LOGIN</title>
+</head>
+<body>
+<form method="post" action="process_register.aspx" enctype="multipart/form-data">
+  <fieldset>
+    <legend> ВХОД НА САЙТ</legend>
+    <table>
+      <tr>
+        <td><label for="login">LOGIN</label></td>
+        <td><input type="text" id="login" name="login" required placeholder="Enter Login"></td>
+      </tr>
+      <tr>
+        <td><label for="password">PASSWORD</label></td>
+        <td><input type="password" id="password" name="password" required="true" placeholder="Enter password" style=""></td>
+      </tr>
+      <tr>
+        <td><label for="user_mail">E-MAIL</label></td>
+        <td><input type="email" id="user_mail" name="mail" required="true" placeholder="Enter E-mail" style=""></td>
+      </tr>
+      <tr>
+        <td><label>Gender: </label></td>
+        <td>
+          <label for="_male">Male</label>
+          <input type="radio" name="gender" id="_male" value="male">
+          <label for="_female">Female</label>
+          <input type="radio" name="gender" id="_female" value="female">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="color" name="" id="">
+        </td>
+      </tr>
+      <tr>
+        <td><label>Age:</label></td>
+        <td><input type="number" min="18" max="60" step="1" name="user-age"></td>
+      </tr>
+      <tr>
+        <td><label>Salary:</label></td>
+        <td><input type="range" min="10000" max="60000" step="10000" name="user-salary"></td>
+      </tr>
+      <tr>
+        <td>
+          <label>Technologies</label>
+        </td>
+        <td>
+          ASP:&nbsp; <input type="checkbox" name="techs" value="1">
+          PHP:&nbsp; <input type="checkbox" name="techs" value="1">
+          Node.js:&nbsp; <input type="checkbox" name="techs" value="1">
+          JS:&nbsp; <input type="checkbox" name="techs" value="1">
+          React:&nbsp; <input type="checkbox" name="techs" value="1">
+        </td>
+      </tr>
+      <tr>
+        <td><label for="city">CITY:</label></td>
+        <td>
+          <select name="_city" id="city">
+            <optgroup label="Tula region">
+              <option value="1">Tula</option>
+              <option value="1" selected>Novomoskovsk</option>
+              <option value="1">Venev</option>
+            </optgroup>
+            <optgroup label="Another cities">
+              <option value="1">Moscow</option>
+              <option value="1">Kiev</option>
+              <option value="1">Tula</option>
+              <option value="1">Saint-Petersburg</option>
+            </optgroup>
+
+
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <textarea name="_user-text" id="user_about" cols="30" rows="5"
+                    style="max-width: 100px;max-height: 100px;"
+                    placeholder="Some text about you">
+
+          </textarea>
+        </td>
+      </tr>
+      <tr>
+        <td><label>Resume</label></td>
+        <td><input type="file" name="_resume" id="resume" accept="application/pdf"></td>
+      </tr>
+
+
+      <tr>
+        <td><label for="save-password">SAVE PASSWORD</label></td>
+        <td><input type="checkbox" id="save-password" name="save-password" value="1"></td>
+      </tr>
+      <tr>
+        <td><input type="submit" value="залогиниться" ></td>
+        <td><input type="button" value="зарегистрироваться" onclick="location.href='index.html'"></td>
+      </tr>
+      <tr>
+        <td>
+          <label for="reset">Сброс формы</label>
+          <input type="reset"id="reset">
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+  <input type="hidden" name="a" value="1">
+  <input type="hidden" name="b" value="b">
+  <input type="hidden" name="c" value="223">
+
+
+</form>
+</body>
+</html>

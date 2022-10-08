@@ -1,0 +1,57 @@
+#color_box
+{
+    width: 100%;
+    height: 300px;
+}
+@media(min-width: 0px) and (max-width: 599px)
+{
+    #color_box
+    {
+        background-color: aquamarine;
+        display: none;
+        visibility: hidden;
+    }
+}
+@media(min-width: 600px) and (max-width: 799px)
+{
+    #color_box
+    {
+        background-color: #c52b2b;
+        display: block;
+    }
+}
+@media(min-width: 800px)
+{
+    #color_box
+    {
+        background-color: #7390f0;
+        display: block;
+    }
+}
+#main_cont
+{
+    width: 100%;
+}
+#left_cont, #right_cont
+{
+    width: 49%;
+    height: 300px;
+    float: left;
+    min-width: 250px;
+}
+#left_cont
+{
+    background-color: brown;
+}
+#right_cont
+{
+    background-color: orange;
+    margin-left: 10px;
+}
+@media(min-width: 550px)
+{
+
+    #right_cont{
+        margin-left: 10px;
+    }
+}

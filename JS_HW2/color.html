@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div id="container">
+    <div id="circle">
+
+    </div>
+    <div id="square">
+
+    </div>
+    <div id="trap">
+
+    </div>
+
+</div>
+<div>
+    <select onchange="color(this.options[this.selectedIndex], _fig.options[_fig.selectedIndex])" name="colors" id="_col">
+        <option value="yellow">Yellow</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+    </select>
+    <select name="fig" id="_fig">
+        <option value="square">Square</option>
+        <option value="circle">Circle</option>
+        <option value="trap">Triangle</option>
+    </select>
+</div>
+<a href="index.html">Вернуться на главную страницу</a>
+
+
+<script src="app.js"></script>
+</body>
+</html>

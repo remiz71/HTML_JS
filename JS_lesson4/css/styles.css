@@ -1,0 +1,13 @@
+.field{
+    width: 760px;
+    min-width: 760px;
+    height: 570px;
+    min-height: 570px;
+    background-image: url("../images/field.jpg");
+}
+.ball
+{
+    position: absolute;
+    left:360px;
+    top:260px;
+}
